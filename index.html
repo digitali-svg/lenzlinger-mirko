@@ -7,115 +7,189 @@
 <meta name="description" content="Lenzlinger Mirko — boutique en ligne. Site en cours de construction, pages et photos à venir.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header class="site-header">
+<header id="site-header">
   <div class="wrap">
-    <a href="index.html" class="logo">
-      <span class="logo-animate"><span class="logo-mark">Lenzlinger</span> Mirko</span>
+    <a href="index.html" class="wordmark">
+      <span class="mark">Lenzlinger</span> Mirko
     </a>
-    <nav class="main-nav" id="main-nav">
-      <ul>
-        <li><a href="index.html" aria-current="page">Accueil</a></li>
-        <li><a href="produits.html">Produits</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+
+    <nav class="main-nav">
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
-      <span></span><span></span><span></span>
-    </button>
+
+    <div class="header-actions">
+      <a href="contact.html" class="btn-pill">Nous contacter</a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="full-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
+
+<div id="full-menu">
+  <nav>
+    <a href="index.html" aria-current="page">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="menu-footer">
+    <a href="contact.html" class="btn-pill btn-pill-lg">Nous contacter</a>
+  </div>
+</div>
 
 <main>
 
   <section class="hero">
-    <div class="wrap">
-      <div>
-        <span class="eyebrow">Nouvelle boutique</span>
-        <h1>Lenzlinger Mirko, l'élégance au quotidien</h1>
-        <p class="lead">Une sélection soignée, pensée pour durer. Découvrez nos produits et commandez en toute simplicité.</p>
-        <div class="cta-row">
-          <a href="produits.html" class="btn btn-primary">Voir les produits</a>
-          <a href="contact.html" class="btn btn-outline">Nous contacter</a>
+    <div class="hero-media">
+      <div class="kenburns">Photo à venir</div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-inner">
+        <p class="kicker" data-reveal data-reveal-hero>Nouvelle boutique</p>
+        <h1 data-reveal data-reveal-hero style="--reveal-delay:100ms">
+          Lenzlinger Mirko,<br>
+          <em>l'élégance</em> au quotidien
+        </h1>
+        <p class="lead" data-reveal data-reveal-hero style="--reveal-delay:220ms">
+          Une sélection soignée, pensée pour durer. Découvrez nos produits et commandez en toute simplicité.
+        </p>
+        <div class="hero-actions" data-reveal data-reveal-hero style="--reveal-delay:340ms">
+          <a href="produits.html" class="btn-pill">Voir les produits</a>
+          <a href="contact.html" class="link-draw">Nous contacter</a>
         </div>
       </div>
-      <div class="hero-visual">Photo à venir</div>
+    </div>
+
+    <div class="hero-stats" data-reveal style="--reveal-delay:500ms">
+      <div class="row">
+        <span><span class="num">—</span>à compléter</span>
+        <span><span class="num">—</span>à compléter</span>
+        <span><span class="num">—</span>à compléter</span>
+      </div>
     </div>
   </section>
 
   <section id="produits">
     <div class="wrap">
       <div class="section-head">
-        <div>
-          <h2>Nos produits phares</h2>
-          <p>Un aperçu de la sélection — fiches complètes et photos disponibles très bientôt.</p>
-        </div>
-        <a href="produits.html" class="btn btn-outline">Tout voir</a>
+        <h2 data-reveal>Nos produits <em>phares</em></h2>
+        <p data-reveal style="--reveal-delay:80ms">Un aperçu de la sélection — fiches complètes et photos disponibles très bientôt.</p>
       </div>
-      <div class="grid">
-        <article class="card">
-          <div class="card-media">Photo à venir</div>
+
+      <div class="feature-grid">
+        <a href="produits.html" class="card-feature rise-card" data-reveal>
+          <div class="media-fill">Photo à venir</div>
+          <div class="card-body">
+            <h3 class="editorial">Produit à définir</h3>
+            <p>Description courte du produit, à compléter.</p>
+            <span class="more">En savoir plus →</span>
+          </div>
+        </a>
+
+        <a href="produits.html" class="card-simple rise-card" data-reveal style="--reveal-delay:70ms">
+          <div class="media-fill">Photo à venir</div>
           <div class="card-body">
             <h3>Produit à définir</h3>
-            <span class="badge-soon">Bientôt disponible</span>
+            <p>Description courte.</p>
+            <span class="more">En savoir plus →</span>
           </div>
-        </article>
-        <article class="card">
-          <div class="card-media">Photo à venir</div>
+        </a>
+
+        <a href="produits.html" class="card-simple rise-card" data-reveal style="--reveal-delay:140ms">
+          <div class="media-fill">Photo à venir</div>
           <div class="card-body">
             <h3>Produit à définir</h3>
-            <span class="badge-soon">Bientôt disponible</span>
+            <p>Description courte.</p>
+            <span class="more">En savoir plus →</span>
           </div>
-        </article>
-        <article class="card">
-          <div class="card-media">Photo à venir</div>
-          <div class="card-body">
-            <h3>Produit à définir</h3>
-            <span class="badge-soon">Bientôt disponible</span>
-          </div>
-        </article>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="about">
+  <section class="band-dark grain">
     <div class="wrap">
-      <div class="about-media">Photo à venir</div>
-      <div>
-        <span class="eyebrow">Notre histoire</span>
+      <div class="overlap-media">
+        <div class="media-fill" data-reveal>Photo à venir</div>
+        <div class="media-fill small" data-reveal style="--reveal-delay:150ms">Photo à venir</div>
+      </div>
+      <div class="copy" data-reveal style="--reveal-delay:100ms">
+        <p class="kicker">Notre histoire</p>
         <h2>Une marque, un visage</h2>
         <p class="lead">Quelques lignes sur Lenzlinger Mirko : qui vous êtes, votre démarche, ce qui rend vos produits uniques. À compléter avec vos propres mots.</p>
-        <a href="a-propos.html" class="btn btn-outline">En savoir plus</a>
+        <a href="a-propos.html" class="link-draw">En savoir plus →</a>
       </div>
     </div>
   </section>
 
-  <section class="cta-band">
+  <section class="text-center-section">
     <div class="wrap">
-      <h2>Une question avant de commander ?</h2>
-      <p>Nous répondons rapidement, en français.</p>
-      <a href="contact.html" class="btn btn-primary">Contactez-nous</a>
+      <h2 data-reveal>Fabrication &amp; <em style="color:var(--yellow-dark); font-style:italic;">matières</em></h2>
+      <p data-reveal style="--reveal-delay:80ms">Un paragraphe à venir sur votre savoir-faire, vos matériaux ou votre processus — à écrire avec vos propres mots.</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="wrap">
+      <h2 data-reveal>Ils en parlent</h2>
+      <div class="testimonial-grid">
+        <figure class="testimonial" data-reveal>
+          <blockquote>« Témoignage client à ajouter. »</blockquote>
+          <figcaption>Nom du client — à compléter</figcaption>
+        </figure>
+        <figure class="testimonial" data-reveal style="--reveal-delay:90ms">
+          <blockquote>« Témoignage client à ajouter. »</blockquote>
+          <figcaption>Nom du client — à compléter</figcaption>
+        </figure>
+        <figure class="testimonial" data-reveal style="--reveal-delay:180ms">
+          <blockquote>« Témoignage client à ajouter. »</blockquote>
+          <figcaption>Nom du client — à compléter</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band grain">
+    <div class="wrap">
+      <h2 data-reveal>Une question <em>avant de commander</em> ?</h2>
+      <p class="lead" data-reveal style="--reveal-delay:80ms">Nous répondons rapidement, en français.</p>
+      <div class="hero-actions" data-reveal style="--reveal-delay:160ms">
+        <a href="contact.html" class="btn-pill btn-pill-lg">Contactez-nous</a>
+      </div>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
+<footer id="site-footer" class="grain">
+  <div class="top">
+    <span class="wordmark"><span class="mark">Lenzlinger</span> Mirko</span>
+    <p class="tagline">« L'élégance au quotidien. »</p>
+  </div>
+  <div class="cols">
+    <p>Lenzlinger Mirko<br>Adresse — à compléter</p>
+    <p>
+      Téléphone — à compléter<br>
+      <a href="mailto:contact@lenzlinger-mirko.ch" class="link-draw">contact@lenzlinger-mirko.ch</a>
+    </p>
+    <p>
+      <a href="produits.html" class="link-draw">Produits</a><br>
+      <a href="contact.html" class="link-draw">Contact</a>
+    </p>
+  </div>
+  <div class="bottom">
     <span>&copy; 2026 Lenzlinger Mirko. Tous droits réservés.</span>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="produits.html">Produits</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </div>
 </footer>
 

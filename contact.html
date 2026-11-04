@@ -7,86 +7,117 @@
 <meta name="description" content="Contactez Lenzlinger Mirko.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,400;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<style>
+  .contact-grid { display: grid; gap: 48px; grid-template-columns: 1fr; margin-top: 48px; }
+  @media (min-width: 860px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
+  .form-field { margin-bottom: 20px; }
+  .form-field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+  .form-field input, .form-field textarea {
+    width: 100%; padding: 12px 14px; border: 1px solid var(--line-dark);
+    border-radius: 4px; font: inherit; background: #fff;
+  }
+  .form-field textarea { min-height: 140px; resize: vertical; }
+  .info-list { list-style: none; padding: 0; margin: 24px 0 0; }
+  .info-list li { padding: 14px 0; border-top: 1px solid var(--line-dark); }
+</style>
 </head>
 <body>
 
-<header class="site-header">
+<header id="site-header">
   <div class="wrap">
-    <a href="index.html" class="logo">
-      <span class="logo-animate"><span class="logo-mark">Lenzlinger</span> Mirko</span>
+    <a href="index.html" class="wordmark">
+      <span class="mark">Lenzlinger</span> Mirko
     </a>
-    <nav class="main-nav" id="main-nav">
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="produits.html">Produits</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
-      </ul>
+    <nav class="main-nav">
+      <a href="index.html">Accueil</a>
+      <a href="produits.html">Produits</a>
+      <a href="a-propos.html">À propos</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </nav>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav">
-      <span></span><span></span><span></span>
-    </button>
+    <div class="header-actions">
+      <a href="contact.html" class="btn-pill">Nous contacter</a>
+      <button id="menu-toggle" class="menu-toggle" type="button" aria-expanded="false" aria-controls="full-menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
 
+<div id="full-menu">
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+  <div class="menu-footer">
+    <a href="contact.html" class="btn-pill btn-pill-lg">Nous contacter</a>
+  </div>
+</div>
+
 <main>
 
-  <section class="hero" style="padding-bottom: 32px;">
-    <div class="wrap" style="grid-template-columns: 1fr;">
-      <div>
-        <span class="eyebrow">Contact</span>
-        <h1>Parlons-en</h1>
-        <p class="lead">Une question sur un produit, une commande, ou autre chose ? Écrivez-nous.</p>
-      </div>
-    </div>
-  </section>
+  <section style="padding-top: 148px; padding-bottom: 0;">
+    <div class="wrap">
+      <p class="kicker" style="color:var(--yellow-dark);" data-reveal>Contact</p>
+      <h1 class="editorial" style="font-size:clamp(34px,5vw,56px); margin:0;" data-reveal style="--reveal-delay:80ms">Parlons-en</h1>
+      <p style="max-width:50ch; color:rgba(20,19,16,.65); margin-top:18px;" data-reveal style="--reveal-delay:140ms">Une question sur un produit, une commande, ou autre chose ? Écrivez-nous.</p>
 
-  <section style="padding-top: 0;">
-    <div class="wrap contact-grid">
       <!-- Formulaire de démonstration : pas encore relié à un service d'envoi.
            À connecter (ex. Formspree, Netlify Forms, ou un backend) avant mise en ligne. -->
-      <form class="contact-form" aria-label="Formulaire de contact">
-        <div class="form-field">
-          <label for="name">Nom</label>
-          <input type="text" id="name" name="name" autocomplete="name" required>
-        </div>
-        <div class="form-field">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" autocomplete="email" required>
-        </div>
-        <div class="form-field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Envoyer</button>
-      </form>
+      <div class="contact-grid">
+        <form class="contact-form" aria-label="Formulaire de contact">
+          <div class="form-field">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn-pill" style="border:0; cursor:pointer;">Envoyer</button>
+        </form>
 
-      <div>
-        <h2 style="font-family:'Fraunces',Georgia,serif; font-size:24px; margin-top:0;">Coordonnées</h2>
-        <ul class="info-list">
-          <li><strong>E-mail</strong><br>contact@lenzlinger-mirko.ch</li>
-          <li><strong>Téléphone</strong><br>À compléter</li>
-          <li><strong>Adresse</strong><br>À compléter</li>
-        </ul>
+        <div>
+          <h2 class="editorial" style="font-size:24px; margin-top:0;">Coordonnées</h2>
+          <ul class="info-list">
+            <li><strong>E-mail</strong><br>contact@lenzlinger-mirko.ch</li>
+            <li><strong>Téléphone</strong><br>À compléter</li>
+            <li><strong>Adresse</strong><br>À compléter</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
+
+  <div style="height: 80px;"></div>
 
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">
+<footer id="site-footer" class="grain">
+  <div class="top">
+    <span class="wordmark"><span class="mark">Lenzlinger</span> Mirko</span>
+    <p class="tagline">« L'élégance au quotidien. »</p>
+  </div>
+  <div class="cols">
+    <p>Lenzlinger Mirko<br>Adresse — à compléter</p>
+    <p>
+      Téléphone — à compléter<br>
+      <a href="mailto:contact@lenzlinger-mirko.ch" class="link-draw">contact@lenzlinger-mirko.ch</a>
+    </p>
+    <p>
+      <a href="produits.html" class="link-draw">Produits</a><br>
+      <a href="contact.html" class="link-draw">Contact</a>
+    </p>
+  </div>
+  <div class="bottom">
     <span>&copy; 2026 Lenzlinger Mirko. Tous droits réservés.</span>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="produits.html">Produits</a></li>
-        <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
   </div>
 </footer>
 
