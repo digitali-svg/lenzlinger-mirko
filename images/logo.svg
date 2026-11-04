@@ -1,14 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 148" role="img" aria-label="Lenzlinger — Étiquettes · Etiketten">
-  <path d="M10,78 C10,46 26,14 66,8 C82,6 94,10 100,20"
-        fill="none" stroke="#D1AEF5" stroke-width="6" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 320" role="img" aria-label="Lenzlinger — Etiquettes – Etiketten">
+  <!-- drop-shadow plate, same layered look as the original mark -->
+  <rect x="16" y="78" width="432" height="178" fill="#9a9a9a"/>
 
+  <!-- CMYK swatches -->
   <g>
-    <rect x="118" y="2"  width="22" height="22" rx="3" fill="#4FC3E6" stroke="rgba(247,243,234,0.35)" stroke-width="1.5"/>
-    <rect x="144" y="2"  width="22" height="22" rx="3" fill="#F06AA8" stroke="rgba(247,243,234,0.35)" stroke-width="1.5"/>
-    <rect x="170" y="2"  width="22" height="22" rx="3" fill="#F5D033" stroke="rgba(247,243,234,0.35)" stroke-width="1.5"/>
-    <rect x="196" y="2"  width="22" height="22" rx="3" fill="#141310" stroke="rgba(247,243,234,0.6)" stroke-width="1.5"/>
+    <rect x="236" y="8"  width="46" height="46" fill="#00AEEF"/>
+    <rect x="292" y="8"  width="46" height="46" fill="#EC008C"/>
+    <rect x="348" y="8"  width="46" height="46" fill="#FFF200"/>
+    <rect x="404" y="8"  width="46" height="46" fill="#111111"/>
   </g>
 
-  <text x="1" y="104" font-family="'Fraunces', Georgia, serif" font-weight="700" font-size="64" letter-spacing="-1.5" fill="#D1AEF5">Lenzlinger</text>
-  <text x="2" y="132" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="16" letter-spacing="3" fill="#F7F3EA" fill-opacity="0.8">ÉTIQUETTES · ETIKETTEN</text>
+  <!-- purple ribbon: curls up at the top-left, then runs as the box border -->
+  <path id="lz-ribbon"
+        d="M42,100
+           C42,56 60,22 94,16
+           C110,13 118,22 112,34
+           C104,50 76,54 68,86
+           L68,238
+           L430,238
+           L430,86
+           L68,86"
+        fill="none" stroke="#6E2A8E" stroke-width="15"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="90" y="200" font-family="'Fraunces', Georgia, serif" font-weight="700"
+        font-style="italic" font-size="72" fill="#6E2A8E" textLength="330" lengthAdjust="spacingAndGlyphs">Lenzlinger</text>
+
+  <text x="8" y="304" font-family="'Inter', system-ui, sans-serif" font-weight="800"
+        font-size="40" letter-spacing="1" fill="#111111">Etiquettes – Etiketten</text>
 </svg>

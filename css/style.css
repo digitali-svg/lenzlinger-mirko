@@ -51,10 +51,16 @@ img { max-width: 100%; display: block; }
   padding: 10px 24px;
 }
 
-.wordmark { display: inline-flex; align-items: center; }
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+}
 
-.brand-logo { height: 58px; width: auto; display: block; }
-.brand-logo-footer { height: 68px; }
+.brand-logo { height: 64px; width: auto; display: block; }
+.brand-logo-footer { height: 76px; }
 
 .main-nav {
   display: none;
