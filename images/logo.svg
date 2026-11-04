@@ -1,10 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" role="img" aria-label="Lenzlinger — Étiquettes · Etiketten">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 148" role="img" aria-label="Lenzlinger — Étiquettes · Etiketten">
+  <path d="M10,78 C10,46 26,14 66,8 C82,6 94,10 100,20"
+        fill="none" stroke="#D1AEF5" stroke-width="6" stroke-linecap="round"/>
+
   <g>
-    <rect x="2"  y="4" width="22" height="22" rx="3" fill="#4FC3E6" stroke="rgba(247,243,234,0.35)" stroke-width="1.5"/>
-    <rect x="28" y="4" width="22" height="22" rx="3" fill="#F06AA8" stroke="rgba(247,243,234,0.35)" stroke-width="1.5"/>
-    <rect x="54" y="4" width="22" height="22" rx="3" fill="#F5D033" stroke="rgba(247,243,234,0.35)" stroke-width="1.5"/>
-    <rect x="80" y="4" width="22" height="22" rx="3" fill="#141310" stroke="rgba(247,243,234,0.6)" stroke-width="1.5"/>
+    <rect x="118" y="2"  width="22" height="22" rx="3" fill="#4FC3E6" stroke="rgba(247,243,234,0.35)" stroke-width="1.5"/>
+    <rect x="144" y="2"  width="22" height="22" rx="3" fill="#F06AA8" stroke="rgba(247,243,234,0.35)" stroke-width="1.5"/>
+    <rect x="170" y="2"  width="22" height="22" rx="3" fill="#F5D033" stroke="rgba(247,243,234,0.35)" stroke-width="1.5"/>
+    <rect x="196" y="2"  width="22" height="22" rx="3" fill="#141310" stroke="rgba(247,243,234,0.6)" stroke-width="1.5"/>
   </g>
-  <text x="1" y="88" font-family="'Fraunces', Georgia, serif" font-weight="700" font-size="64" letter-spacing="-1.5" fill="#D1AEF5">Lenzlinger</text>
-  <text x="2" y="116" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="16" letter-spacing="3" fill="#F7F3EA" fill-opacity="0.8">ÉTIQUETTES · ETIKETTEN</text>
+
+  <text x="1" y="104" font-family="'Fraunces', Georgia, serif" font-weight="700" font-size="64" letter-spacing="-1.5" fill="#D1AEF5">Lenzlinger</text>
+  <text x="2" y="132" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="16" letter-spacing="3" fill="#F7F3EA" fill-opacity="0.8">ÉTIQUETTES · ETIKETTEN</text>
 </svg>
