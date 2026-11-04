@@ -167,6 +167,14 @@ img { max-width: 100%; display: block; }
 
 .wordmark .mark { color: var(--yellow); }
 
+.brand-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.brand-logo-footer { height: 46px; }
+
 .main-nav {
   display: none;
   align-items: center;
