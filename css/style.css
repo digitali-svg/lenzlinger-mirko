@@ -168,12 +168,12 @@ img { max-width: 100%; display: block; }
 .wordmark .mark { color: var(--yellow); }
 
 .brand-logo {
-  height: 40px;
+  height: 58px;
   width: auto;
   display: block;
 }
 
-.brand-logo-footer { height: 46px; }
+.brand-logo-footer { height: 68px; }
 
 .main-nav {
   display: none;
