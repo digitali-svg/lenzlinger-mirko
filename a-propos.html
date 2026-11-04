@@ -46,15 +46,12 @@
 
 <main>
 
-  <section class="band-dark grain" style="padding-top: 148px;">
+  <section class="about">
     <div class="wrap">
-      <div class="overlap-media">
-        <div class="media-fill" data-reveal>Photo à venir</div>
-        <div class="media-fill small" data-reveal style="--reveal-delay:150ms">Photo à venir</div>
-      </div>
-      <div class="copy" data-reveal style="--reveal-delay:100ms">
-        <p class="kicker">Notre histoire</p>
-        <h1 class="editorial" style="font-size:clamp(30px,4vw,44px); margin:0; line-height:1.05;">À propos de Lenzlinger</h1>
+      <div class="media-box">Photo à venir</div>
+      <div>
+        <span class="eyebrow">Notre histoire</span>
+        <h1 class="editorial" style="font-size:clamp(30px,4vw,44px); margin:0 0 20px;">À propos de Lenzlinger</h1>
         <p class="lead">Ce paragraphe est à compléter avec votre histoire : d'où vient la marque, ce qui vous a donné envie de vendre ces produits, et ce qui les rend différents.</p>
         <p class="lead">Une deuxième section peut présenter vos valeurs, votre savoir-faire ou votre processus — à écrire avec vos propres mots dès que vous êtes prêts.</p>
       </div>
@@ -64,23 +61,25 @@
   <section>
     <div class="wrap">
       <div class="section-head">
-        <h2 data-reveal>Nos valeurs</h2>
-        <p data-reveal style="--reveal-delay:80ms">Trois à quatre points clés qui résument votre démarche — à personnaliser.</p>
+        <div>
+          <h2>Nos valeurs</h2>
+          <p>Trois à quatre points clés qui résument votre démarche — à personnaliser.</p>
+        </div>
       </div>
-      <div class="feature-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
-        <article class="card-simple rise-card" data-reveal>
+      <div class="grid">
+        <article class="card">
           <div class="card-body">
             <h3>Qualité</h3>
             <p>Texte à venir sur votre engagement qualité.</p>
           </div>
         </article>
-        <article class="card-simple rise-card" data-reveal style="--reveal-delay:70ms">
+        <article class="card">
           <div class="card-body">
             <h3>Proximité</h3>
             <p>Texte à venir sur la relation client.</p>
           </div>
         </article>
-        <article class="card-simple rise-card" data-reveal style="--reveal-delay:140ms">
+        <article class="card">
           <div class="card-body">
             <h3>Authenticité</h3>
             <p>Texte à venir sur votre approche.</p>
@@ -90,37 +89,29 @@
     </div>
   </section>
 
-  <section class="cta-band grain">
+  <section class="cta-band">
     <div class="wrap">
-      <h2 data-reveal>Envie d'en <em>discuter</em> ?</h2>
-      <p class="lead" data-reveal style="--reveal-delay:80ms">Nous serions ravis d'échanger avec vous.</p>
-      <div class="hero-actions" data-reveal style="--reveal-delay:160ms">
-        <a href="contact.html" class="btn-pill btn-pill-lg">Contactez-nous</a>
-      </div>
+      <h2>Envie d'en discuter ?</h2>
+      <p>Nous serions ravis d'échanger avec vous.</p>
+      <a href="contact.html" class="btn-pill btn-pill-lg">Contactez-nous</a>
     </div>
   </section>
 
 </main>
 
-<footer id="site-footer" class="grain">
+<footer id="site-footer">
   <div class="top">
     <img src="images/logo.svg" class="brand-logo brand-logo-footer" alt="Lenzlinger — Étiquettes / Etiketten">
-    <p class="tagline">« L'élégance au quotidien. »</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="a-propos.html">À propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-  <div class="cols">
-    <p>Lenzlinger<br>Adresse — à compléter</p>
-    <p>
-      Téléphone — à compléter<br>
-      <a href="mailto:contact@lenzlinger-mirko.ch" class="link-draw">contact@lenzlinger-mirko.ch</a>
-    </p>
-    <p>
-      <a href="produits.html" class="link-draw">Produits</a><br>
-      <a href="contact.html" class="link-draw">Contact</a>
-    </p>
-  </div>
-  <div class="bottom">
-    <span>&copy; 2026 Lenzlinger. Tous droits réservés.</span>
-  </div>
+  <div class="bottom">&copy; 2026 Lenzlinger. Tous droits réservés.</div>
 </footer>
 
 <script src="js/main.js"></script>
