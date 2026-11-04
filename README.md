@@ -1,6 +1,6 @@
-# Lenzlinger Mirko — site vitrine
+# Lenzlinger — site vitrine
 
-Site statique (HTML/CSS/JS, sans backend) pour la boutique Lenzlinger Mirko.
+Site statique (HTML/CSS/JS, sans backend) pour la boutique Lenzlinger.
 
 ## Aperçu local
 
